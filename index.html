@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-INDEX-ALETHEIA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>L'Index Aletheia</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Search for Truth</h2>
+
+            <form id="searchForm">
+                <input 
+                  type="text" 
+                  id="searchInput" 
+                  placeholder="Enter author or keyword..."
+                />
+
+                <button type="submit" id="searchBtn" disabled>
+                  Search
+                </button>
+
+                <p id="errorMsg"></p>
+            </form>
+        </section>
+
+        <section id="gallery" style="display: none;">
+            <div id="cardsContainer"></div>
+        </section>
+    </main>
+</body>
+</html>
