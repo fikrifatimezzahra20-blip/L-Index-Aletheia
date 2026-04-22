@@ -36,6 +36,30 @@ header h1 {
 main {
     padding: 16px;
 }
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 50px;
+  color: #DEC45C;
+}
+.icon {
+  width: 35px;
+  height: auto;
+  background: transparent;
+  filter: drop-shadow(0 0 8px #DEC45C)drop-shadow(0 0 15px rgba(255,215,0,0.4));
+  display: flex;
+  align-items: center;
+}
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
 .hero {
     display: flex;
     flex-direction: column;
@@ -119,6 +143,23 @@ button:disabled {
 }
 .card:hover {
   transform: scale(1.02);
+}
+.empty-msg {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #DEC45C;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes fadeIn {
   from {
